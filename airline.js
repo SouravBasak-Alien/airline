@@ -29,7 +29,7 @@ function btn(firstClassButton){
 	firstClassInputNumber = parseInt(firstClassInput);
 	const anotherNum = firstClassInputNumber;
 
-	if(anotherNum != 0){
+	if(0<anotherNum){
 		if(firstClassButton == true){
 			const firstClassTicket = anotherNum + 1;
 		 document.getElementById('firstClassInput').value = firstClassTicket;
@@ -68,7 +68,7 @@ function EconomyBtn(EconomyClassButton){
 	EconomyInputNumber = parseInt(EconomyInput);
 	const EconomyNum = EconomyInputNumber;
 
-	if( EconomyNum != 0){
+	if( 0<EconomyNum){
 		if(EconomyClassButton == true){
 			const EconomyTicket = EconomyNum + 1;
 			document.getElementById('EconomyInput').value = EconomyTicket;
@@ -137,7 +137,7 @@ document.getElementById('BookBtn').addEventListener("click", function() {
 
 	const EconomyInput = document.getElementById('EconomyInput').value;
 	EconomyInputNumber = parseInt(EconomyInput);
-	document.getElementById('detailsEconomyTicket').innerText = firstClassInputNumber;
+	document.getElementById('detailsEconomyTicket').innerText = EconomyInputNumber;
 
 
 	const vat = document.getElementById('vat').innerText;
