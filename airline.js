@@ -137,7 +137,7 @@ document.getElementById('BookBtn').addEventListener("click", function() {
 
 	const EconomyInput = document.getElementById('EconomyInput').value;
 	EconomyInputNumber = parseInt(EconomyInput);
-	document.getElementById('detailsEconomyTicket').innerText = firstClassInputNumber;
+	document.getElementById('detailsEconomyTicket').innerText = EconomyInputNumber;
 
 
 	const vat = document.getElementById('vat').innerText;
